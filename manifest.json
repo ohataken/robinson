@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Robinson",
+  "version": "0.1",
+
+  "description": "Generates various format links",
+
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "runtime"
+  ],
+
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+  }],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+
+}
