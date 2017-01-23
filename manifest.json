@@ -6,6 +6,7 @@
   "author": "ohataken",
 
   "description": "Generates various format links",
+  "homepage_url": "https://github.com/ohataken/robinson",
 
   "permissions": [
     "tabs",
