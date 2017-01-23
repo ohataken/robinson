@@ -9,14 +9,14 @@ const templates = {
 };
 
 Object.keys(templates).forEach((key) => {
-  chrome.contextMenus.create({
+  browser.contextMenus.create({
     id: key,
     title: key,
   });
 });
 
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+browser.contextMenus.onClicked.addListener((info, tab) => {
   const template = templates[info.menuItemId];
   const link = templateLink(template, tab.title, tab.url);
-  chrome.tabs.sendMessage(tab.id, { link: link });
+  browser.tabs.sendMessage(tab.id, { link: link });
 });

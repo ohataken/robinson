@@ -1,3 +1,3 @@
-chrome.runtime.onMessage.addListener((message) => {
+browser.runtime.onMessage.addListener((message) => {
   alert(message.link);
 });
