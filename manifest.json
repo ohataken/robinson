@@ -8,8 +8,7 @@
 
   "permissions": [
     "tabs",
-    "contextMenus",
-    "runtime"
+    "contextMenus"
   ],
 
   "content_scripts": [{
