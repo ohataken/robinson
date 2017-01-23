@@ -4,6 +4,7 @@ browser.runtime.onMessage.addListener((message) => {
   document.body.appendChild(el);
   el.setAttribute("type", "text");
   el.setAttribute("value", message.link);
+  el.setAttribute("style", "display: none;");
   el.select();
   document.execCommand("copy");
 });
